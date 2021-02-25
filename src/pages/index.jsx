@@ -11,6 +11,24 @@ const IndexPage = () => (
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
     <Link to="/page-2/">Go to page 2</Link> <br />
+    <div className="grid grid-cols-2 gap-3 mt-4">
+      <div>
+        <h2>Column 1</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque,
+          rerum.
+        </p>
+      </div>
+      <div>
+        <h2>Column 2</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+          asperiores, assumenda commodi dolore dolorum error excepturi impedit
+          ipsa ipsam laborum magnam, minus molestias natus nihil officia
+          pariatur quisquam reprehenderit sint!
+        </p>
+      </div>
+    </div>
   </Layout>
 );
 

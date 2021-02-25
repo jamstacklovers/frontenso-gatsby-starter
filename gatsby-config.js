@@ -28,6 +28,7 @@ module.exports = {
     },
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-netlify-cache`,
+    `gatsby-plugin-postcss`,
   ],
   flags: {
     FAST_DEV: false,
