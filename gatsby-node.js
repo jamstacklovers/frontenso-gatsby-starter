@@ -1,7 +1,26 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/node-apis/
- */
+exports.onCreateWebpackConfig = ({ actions, loaders, getConfig, stage }) => {
+  const config = getConfig();
 
-// You can delete this file if you're not using it
+  config.module.rules = [
+    ...config.module.rules.filter(
+      rule => String(rule.test) !== String(/\.jsx?$/)
+    ),
+
+    {
+      ...loaders.js(),
+
+      test: /\.jsx?$/,
+      loader: '@linaria/webpack-loader',
+      options: {
+        sourceMap: stage.includes('develop'),
+        displayName: stage.includes('develop'),
+        babelOptions: {
+          presets: ['babel-preset-gatsby'],
+        },
+      },
+      exclude: /node_modules/,
+    },
+  ];
+
+  actions.replaceWebpackConfig(config);
+};

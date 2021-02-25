@@ -1,0 +1,29 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "es6": true,
+    "commonjs": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "rules": {
+    "no-unused-vars": "error",
+    "no-undef": "error",
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "no-class-assign": "off",
+    "import/no-named-as-default": "off",
+    "import/prefer-default-export": "off",
+    "react/prop-types": "off",
+    "no-func-assign": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

@@ -71,3 +71,6 @@ yarn-error.log
 # Misc
 .idea
 .fuse_hidden*
+
+# Linaria
+.linaria-cache/
