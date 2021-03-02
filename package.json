@@ -20,6 +20,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "gatsby": "^2.32.6",
     "gatsby-image": "^2.11.0",
+    "gatsby-plugin-image": "^0.7.2",
     "gatsby-plugin-manifest": "^2.12.1",
     "gatsby-plugin-netlify-cache": "^1.2.0",
     "gatsby-plugin-postcss": "^3.7.0",
@@ -57,7 +58,7 @@
     "lint:css": "stylelint \"src/**/*.{jsx,js}\"",
     "lint:js": "eslint --max-warnings 0 \"src/**/*.{jsx,js}\"",
     "validate": "npm-run-all --parallel format lint:css lint:js",
-    "validate:ci": "npm-run-all --parallel format lint:css lint:js"
+    "validate:ci": "npm-run-all --parallel lint:css lint:js"
   },
   "husky": {
     "hooks": {
