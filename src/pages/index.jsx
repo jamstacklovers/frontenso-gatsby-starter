@@ -2,33 +2,25 @@ import React from 'react';
 
 import Layout from '../components/layout';
 import Seo from '../components/seo';
-import SectionExample from '../components/section-example';
-import Container from '../components/container';
+import TextAndImage from '../components/text-and-image';
+import Spacer from '../components/spacer';
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <SectionExample />
-    <Container>
-      <div className="grid grid-cols-2 gap-3 mt-4">
-        <div>
-          <h2>Column 1</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque,
-            rerum.
-          </p>
-        </div>
-        <div>
-          <h2>Column 2</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-            asperiores, assumenda commodi dolore dolorum error excepturi impedit
-            ipsa ipsam laborum magnam, minus molestias natus nihil officia
-            pariatur quisquam reprehenderit sint!
-          </p>
-        </div>
-      </div>
-    </Container>
+    <TextAndImage
+      title="An online space for the likeminded"
+      text={
+        '<p><strong>The Stillpoint Spaces Community</strong> is a social space for counsellors, therapists, and the psychologically curious from all around the world! We bring together professionals and the psychologically curious to re-imagine psychology today, together.</p><p>This network meets with our broader vision to create the conditions for personal and professional growth, and positive change in our lives and in the wider world.</p>'
+      }
+    />
+    <Spacer />
+    <TextAndImage
+      title="An online space for the likeminded"
+      text={
+        '<p><strong>The Stillpoint Spaces Community</strong> is a social space for counsellors, therapists, and the psychologically curious from all around the world! We bring together professionals and the psychologically curious to re-imagine psychology today, together.</p><p>This network meets with our broader vision to create the conditions for personal and professional growth, and positive change in our lives and in the wider world.</p>'
+      }
+    />
   </Layout>
 );
 

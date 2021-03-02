@@ -1,4 +1,4 @@
-export const CONTAINER_WIDTH = 1156;
+export const CONTAINER_WIDTH = 1189;
 export const CONTAINER_WIDTH_SMALL = 1100;
 export const MOCKUP_WIDTH = 1440;
 export const OFFSET_SIDE = 60;
@@ -17,3 +17,5 @@ export const MEDIA_SMALL_DESKTOP = `@media (max-width: ${BREAKPOINT_LG}px)`;
 export const MEDIA_TABLET = `@media (max-width: ${BREAKPOINT_MD}px)`;
 export const MEDIA_MOBILE = `@media (max-width: ${BREAKPOINT_SM}px)`;
 export const MEDIA_MOBILE_XXS = `@media (max-width: ${BREAKPOINT_XXS}px)`;
+
+export const FONT_FAMILY_SANS = 'Helvetica Neue, Arial, sans-serif';
