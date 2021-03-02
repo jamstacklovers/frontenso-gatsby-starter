@@ -34,7 +34,7 @@ module.exports = {
   ],
   flags: {
     FAST_DEV: false,
-    DEV_SSR: true,
+    DEV_SSR: false,
     LAZY_IMAGES: false,
     QUERY_ON_DEMAND: false,
     PARALLEL_SOURCING: false,
