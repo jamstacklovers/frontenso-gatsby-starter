@@ -31,6 +31,14 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-netlify-cache`,
     `gatsby-plugin-postcss`,
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /^((?!\.url-loader).)*\.svg$/,
+        },
+      },
+    },
   ],
   flags: {
     FAST_DEV: false,
