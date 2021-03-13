@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "strict": false,
+    "alwaysStrict": true,
+    "noImplicitThis": false,
+    "noImplicitAny": true,
+    "strictBindCallApply": false,
+    "strictPropertyInitialization": false,
+    "strictNullChecks": true,
+    "strictFunctionTypes": false,
+    "allowJs": true,
+    "checkJs": true,
+    "noEmit": true,
+    "lib": ["dom", "es2017"],
+    "jsx": "react",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "node"
+  },
+  "include": ["src", "src/**/*.jsx"],
+  "exclude": [
+    "node_modules",
+    "public",
+    "gatsby-node.js",
+    "gatsby-browser.js",
+    "gatsby-config.js",
+    "gatsby-ssr.js"
+  ]
+}
