@@ -1,19 +1,20 @@
 import { Link } from 'gatsby';
 import React from 'react';
-import { styled } from '@linaria/react';
+import cn from 'classnames';
 
-const StyledHeader = styled.header`
-  color: #fff;
-  background-color: rebeccapurple;
-  height: 100px;
-`;
+import * as styles from './header.module.css';
 
 const Header = ({ siteTitle }) => (
-  <StyledHeader>
+  <header
+    className={cn(
+      styles.header,
+      'bg-blue-400 text-white p-4 font-semibold mb-4 text-xl'
+    )}
+  >
     <h1>
       <Link to="/">{siteTitle}</Link>
     </h1>
-  </StyledHeader>
+  </header>
 );
 
 export default Header;

@@ -1,7 +1,6 @@
 {
   "extends": [
-    "stylelint-config-recommended",
-    "@linaria/stylelint"
+    "stylelint-config-recommended"
   ],
   "rules" : {
     "property-no-vendor-prefix": null,
@@ -9,6 +8,17 @@
     "rule-empty-line-before": [
       "always-multi-line",
       { "except": ["first-nested"] }
+    ],
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "extends",
+          "tailwind",
+          "apply",
+          "layer"
+        ]
+      }
     ]
   }
 }

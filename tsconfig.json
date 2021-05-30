@@ -17,7 +17,8 @@
     "skipLibCheck": true,
     "module": "esnext",
     "target": "esnext",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "esModuleInterop": true
   },
   "include": ["src", "src/**/*.jsx"],
   "exclude": [
@@ -27,5 +28,6 @@
     "gatsby-browser.js",
     "gatsby-config.js",
     "gatsby-ssr.js"
-  ]
+  ],
+  "files": ["./custom.d.ts"]
 }

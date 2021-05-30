@@ -32,13 +32,14 @@ module.exports = {
     `gatsby-plugin-netlify-cache`,
     `gatsby-plugin-postcss`,
     {
-      resolve: 'gatsby-plugin-react-svg',
+      resolve: 'gatsby-plugin-svgr',
       options: {
         rule: {
           include: /^((?!\.url-loader).)*\.svg$/,
         },
       },
     },
+    'gatsby-plugin-dts-css-modules',
   ],
   flags: {
     FAST_DEV: false,
