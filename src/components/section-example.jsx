@@ -11,7 +11,7 @@ function SectionExample() {
         src="../images/gatsby-astronaut.png"
         alt="Astronaut"
         width={150}
-        formats={['AVIF', 'WEBP', 'JPEG', 'PNG']}
+        formats={['AVIF', 'WEBP', 'AUTO']}
       />
     </Container>
   );
